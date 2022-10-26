@@ -7,7 +7,8 @@
     "build": "tsc",
     "test": "rm baselines/local/*; tsc && node built/test.js",
     "accept": "mv baselines/local/* baselines/reference/",
-    "mtsc": "node built/index.js"
+    "mtsc": "node built/src/index.js",
+    "otsc": "tsc && node built/original/index.js"
   },
   "repository": {
     "type": "git",
